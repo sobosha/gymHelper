@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">gymHelper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_add_plan">اضافه کردن برنامه</string>
+    <string name="label_show_plan">دیدن برنامه ها</string>
+    <string name="label_plan_name">نام برنامه</string>
+    <string name="label_rest_time">مقدار زمان استراحت</string>
+    <string name="label_minute">دقیقه</string>
+    <string name="label_second">ثانیه</string>
+    <string name="label_save">ذخیره</string>
+    <string name="label_exercise_name">نام حرکت</string>
+    <string name="label_number_set">تعداد ست</string>
+    <string name="label_repeat_set">تعداد حرکت در ست</string>
+    <string name="label_add_exercise">افزودن حرکت</string>
+    <string name="msg_plan_name_empty">لطفا نام برنامه را وارد کنید</string>
+    <string name="msg_rest_time_empty">زمان استراحت بین هر ست را وارد کنید</string>
+    <string name="msg_set_empty">لطفا تعداد ست را درست وارد کنید</string>
+    <string name="msg_exercise_name_empty">لطفا نام حرمت را درست وارد کنید</string>
+    <string name="msg_exercise_repeat_empty">لطفا تعداد حرکت را درست وارد کنید</string>
+    <string name="msg_error">خطایی رخ داده است</string>
+    <string name="label_multi">*</string>
 </resources>

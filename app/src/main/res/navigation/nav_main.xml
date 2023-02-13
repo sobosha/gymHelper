@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gymhelper.layer.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addPlanFragment"
+            app:destination="@id/addPlanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_plansFragment"
+            app:destination="@id/plansFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlanFragment"
+        android:name="com.example.gymhelper.layer.ui.exercise.fragment.AddPlanFragment"
+        android:label="fragment_add_plan"
+        tools:layout="@layout/fragment_add_plan" >
+        <action
+            android:id="@+id/action_addPlanFragment_to_addExerciseFragment"
+            app:destination="@id/addExerciseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plansFragment"
+        android:name="com.example.gymhelper.layer.ui.exercise.fragment.PlansFragment"
+        android:label="fragment_plans"
+        tools:layout="@layout/fragment_plans" />
+    <fragment
+        android:id="@+id/addExerciseFragment"
+        android:name="com.example.gymhelper.layer.ui.exercise.fragment.AddExerciseFragment"
+        android:label="fragment_add_exercise"
+        tools:layout="@layout/fragment_add_exercise">
+        <argument
+            android:name="planId"
+            app:argType="long"
+            app:nullable="false"/>
+    </fragment>
+</navigation>

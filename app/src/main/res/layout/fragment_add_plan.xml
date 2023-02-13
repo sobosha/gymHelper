@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".layer.ui.exercise.fragment.AddPlanFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_save_addPlan"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/label_save"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_planName_addPlan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_save_addPlan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_planName_addPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/label_plan_name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_restTime_addPlan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_planName_addPlan"
+        app:layout_constraintWidth_percent="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_rest_addPlan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/label_rest_time"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/til_restTime_addPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/til_restTime_addPlan"
+        app:layout_constraintTop_toTopOf="@id/til_restTime_addPlan">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_minute_addPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_minute" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rb_second_addPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_second" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
