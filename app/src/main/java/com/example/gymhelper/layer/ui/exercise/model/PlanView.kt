@@ -13,3 +13,10 @@ data class PlanView(
         restTimeBetweenExercise = planRestTime * (if (!isRestTimeTypeSecond) 60 else 1)
     )
 }
+
+fun PlanEntity.toPlanView() = PlanView(
+    planName = planName ,
+    id = id ,
+    planRestTime = restTimeBetweenExercise ,
+    isRestTimeTypeSecond = true
+)

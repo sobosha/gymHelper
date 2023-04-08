@@ -28,9 +28,9 @@
     </fragment>
     <fragment
         android:id="@+id/plansFragment"
-        android:name="com.example.gymhelper.layer.ui.exercise.fragment.PlansFragment"
+        android:name="com.example.gymhelper.layer.ui.exercise.fragment.ShowPlansFragment"
         android:label="fragment_plans"
-        tools:layout="@layout/fragment_plans" />
+        tools:layout="@layout/fragment_show_plans" />
     <fragment
         android:id="@+id/addExerciseFragment"
         android:name="com.example.gymhelper.layer.ui.exercise.fragment.AddExerciseFragment"
